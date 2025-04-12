@@ -1,0 +1,189 @@
+/* Reset and Base Styles with subtle left indent */
+html, body {
+  margin: 0;
+  padding: 0 0 0 12px; /* Added 12px left indent */
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #a5b1cd;
+  background-color: #282b38;
+  overflow-x: hidden;
+}
+
+/* Layout Structure with consistent left padding */
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 15px 0 12px; /* Consistent 12px left indent */
+  box-sizing: border-box;
+}
+
+.banner {
+  background-color: #282b38;
+  color: white;
+  padding: 15px 0 15px 12px; /* 12px left indent */
+  margin: 0;
+}
+
+#banner-title {
+  margin: 0;
+  padding: 0 0 0 12px; /* 12px left indent */
+  font-size: 2.2rem;
+}
+
+#banner-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9em;
+  margin: 5px 0 0 12px; /* 12px left indent */
+  padding: 0;
+}
+
+#app-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0 0 0 12px; /* 12px left indent */
+  justify-content: flex-start;
+}
+
+/* Left Column with consistent indent */
+#left-column {
+  flex: 0 0 350px;
+  padding: 15px 15px 15px 12px; /* 12px left indent */
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Right Column with matching indent */
+#right-column {
+  flex: 1;
+  min-width: 500px;
+  padding: 15px 15px 15px 12px; /* 12px left indent */
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Card Styling with consistent padding */
+.card {
+  background: #2a3042;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 0 0 20px 0;
+}
+
+/* Graph Containers */
+.graph-container {
+  background: #2a3042;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  margin: 0 0 20px 0;
+}
+
+/* Button Styling */
+button {
+  background-color: #33C3F0;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  margin: 10px 0 0 0;
+  transition: background-color 0.3s;
+}
+
+/* Form Elements */
+input, select {
+  background-color: #3a4055;
+  border: 1px solid #4a5268;
+  color: #a5b1cd;
+  border-radius: 4px;
+  padding: 8px 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  #app-container {
+    flex-direction: column;
+    padding-left: 12px; /* Maintain 12px indent */
+  }
+
+  #left-column, #right-column {
+    flex: 1 1 100%;
+    width: 100%;
+    padding: 10px 10px 10px 12px; /* Maintain 12px indent */
+  }
+}
+
+/* Graph Specific Styling */
+.graph-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
+/* Metrics Display */
+#metrics-display {
+  background: #2a3042;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Enhanced Dropdown Styling - Bright White Text */
+.Select-control {
+  background-color: #3a4055 !important;
+  border-color: #4a5268 !important;
+  color: #ffffff !important;
+}
+
+.Select-menu-outer {
+  background-color: #3a4055 !important;
+  border-color: #4a5268 !important;
+}
+
+.Select-value-label {
+  color: #ffffff !important;
+  font-weight: 500 !important;
+}
+
+.Select-input input {
+  color: #ffffff !important;
+}
+
+.Select-option {
+  color: #e0e0e0 !important;
+}
+
+.Select-option.is-focused {
+  background-color: #4a5268 !important;
+  color: #ffffff !important;
+}
+
+.Select-option.is-selected {
+  background-color: #33C3F0 !important;
+  color: #ffffff !important;
+}
+
+.Select-placeholder {
+  color: #b0b0b0 !important;
+}
+
+.Select--single > .Select-control .Select-value {
+  color: #ffffff !important;
+}
+
+.Select-arrow-zone svg {
+  fill: #ffffff !important;
+}
+
+.Select-clear-zone svg {
+  fill: #ffffff !important;
+}
